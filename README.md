@@ -121,8 +121,6 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 - `6`: Lowercase alpha (a-z)
 - `7`: Lowercase alpha-numeric (a-z, 0-9)
 
----
-
 
 **Note**: Use parameters correctly to avoid input errors. Refer to the examples above for proper usage.
 
