@@ -6,7 +6,7 @@
 
 Passcrack is a tool designed to perform brute force attacks, dictionary attacks, and hash cracking using rainbow tables. It helps identify weak passwords and improve system security.
 
-This project is maintained by [Diaz Sabat Dolly Silitonga](http://diaz-afk.site/), [Naufal Kanz](https://twitter.com/Jhaddix), [Muhammad Hadi Khairullah](https://github.com/ItsIgnacioPortal), [Naya Amanda](https://blog.g0tmi1k.com/), [Mutiara Putri](https://blog.g0tmi1k.com/), [Ahmad Rizqi Hafil Ardhi](https://blog.g0tmi1k.com/).
+This project is maintained by [Diaz Sabat Dolly Silitonga](https://github.com/diaz-afk), [Naufal Kanz](https://twitter.com/Jhaddix), [Naya Amanda](https://blog.g0tmi1k.com/), [Muhammad Hadi Khairullah](https://github.com/ItsIgnacioPortal), [Ahmad Rizqi Hafil Ardhi](https://github.com/BananaMoustache), [Mutiara Putri](https://blog.g0tmi1k.com/).
 
 ---
 
