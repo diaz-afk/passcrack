@@ -6,7 +6,7 @@
 
 Passcrack is a tool designed to perform brute force attacks, dictionary attacks, and hash cracking using rainbow tables. It helps identify weak passwords and improve system security.
 
-This project is maintained by [Diaz Sabat](http://diaz-afk.site/), [Naufal Kanz](https://twitter.com/Jhaddix), [Muhammad Hadi Khairullah](https://github.com/ItsIgnacioPortal), [Naya Amanda](https://blog.g0tmi1k.com/), [Mutiara Putri](https://blog.g0tmi1k.com/), [Ahmad Rizqi Hafil Ardhi](https://blog.g0tmi1k.com/).
+This project is maintained by [Diaz Sabat Dolly Silitonga](http://diaz-afk.site/), [Naufal Kanz](https://twitter.com/Jhaddix), [Muhammad Hadi Khairullah](https://github.com/ItsIgnacioPortal), [Naya Amanda](https://blog.g0tmi1k.com/), [Mutiara Putri](https://blog.g0tmi1k.com/), [Ahmad Rizqi Hafil Ardhi](https://blog.g0tmi1k.com/).
 
 ---
 
@@ -96,21 +96,6 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 
 ---
 
-## Troubleshooting
-
-### Common Problems
-
-1. **Invalid charset option**
-   - **Solusi**: Double check the charset value being used.
-
-2. **Kesalahan parameter**
-   - **Solusi**: Adjust the parameters according to the guidelines above.
-
-3. **File tidak ditemukan**
-   - **Solusi**: Make sure the username/password file is in the correct location.
-
----
-
 ## Parameters
 
 | Parameter          | Description                                                                                 | Example                                             |
@@ -139,3 +124,18 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 ---
 
 **Note**: Use parameters correctly to avoid input errors. Refer to the examples above for proper usage.
+
+---
+
+## Troubleshooting
+
+### Common Problems
+
+1. **Invalid charset option**
+   - **Solusi**: Double check the charset value being used.
+
+2. **Kesalahan parameter**
+   - **Solusi**: Adjust the parameters according to the guidelines above.
+
+3. **File tidak ditemukan**
+   - **Solusi**: Make sure the username/password file is in the correct location.
