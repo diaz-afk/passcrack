@@ -115,22 +115,3 @@ Ingin berkontribusi? Hebat!
 
 Kami menerima pull request untuk meningkatkan alat ini. Silakan buka issue di halaman repository kami untuk diskusi lebih lanjut.
 
----
-
-## Lisensi
-
-MIT License
-
-**Free Software, Hell Yeah!**
-
----
-
-## Dokumentasi Tambahan
-
-Baca manual lengkap di [Passcrack Manual](Manual_Book_Passcrack.pdf) untuk informasi lebih lanjut.
-
----
-
-## Build Status
-
-[![Build Status](https://travis-ci.org/username/passcrack.svg?branch=master)](https://travis-ci.org/username/passcrack)
