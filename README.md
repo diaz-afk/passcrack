@@ -1,6 +1,6 @@
 # Passcrack
 
-![Passcrack Logo](https://via.placeholder.com/1200x400.png?text=Passcrack)
+![Passcrack Logo](http://diaz-afk.site/img/bg1.jpg)
 
 Passcrack adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
 
