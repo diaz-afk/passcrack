@@ -107,7 +107,7 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 | `-password`        | Fixed password for brute force or file containing a list of passwords for dictionary attack. | `-password 1234` or `-password passwords.txt`      |
 | `-c`               | Charset for brute force attack.                                                             | `-c 5` (numeric)                                   |
 | `-length`          | Specifies the length of username and/or password for brute force attack.                    | `-length 4`                                        |
-| `--sc`             | Filters responses based on the expected HTTP status code(s).                                | `--sc 200,404`                                     |
+| `--sc`             | Filters responses based on the expected HTTP status code.                                   | `--sc 200`                                         |
 | `rtgen`            | Command to generate a rainbow table.                                                        | `rtgen md5 loweralpha 4 6 1000`                    |
 | `rtsort`           | Command to sort rainbow tables.                                                             | `rtsort .`                                         |
 | `rcrack`           | Command to crack hashes using rainbow tables.                                               | `rcrack --hash abc1234567890`                      |
@@ -120,8 +120,6 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 - `5`: Numeric (0-9)
 - `6`: Lowercase alpha (a-z)
 - `7`: Lowercase alpha-numeric (a-z, 0-9)
-
----
 
 **Note**: Use parameters correctly to avoid input errors. Refer to the examples above for proper usage.
 
