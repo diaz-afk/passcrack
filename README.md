@@ -119,4 +119,3 @@ Alat ini dilindungi oleh **MIT License**.
 ## Dokumentasi Tambahan
 
 Silakan baca manual [Passcrack Manual](Manual_Book_Passcrack.pdf) untuk detail lebih lanjut.
-```
