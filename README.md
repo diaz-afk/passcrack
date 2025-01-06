@@ -4,7 +4,7 @@
 
 Passcrack adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
 
-[![Build Status](https://travis-ci.org/username/passcrack.svg?branch=master)](https://travis-ci.org/username/passcrack)
+[![Build With](https://www.python.org/)
 
 ---
 
