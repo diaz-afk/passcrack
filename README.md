@@ -1,6 +1,6 @@
 # Passcrack
 
-![Passcrack Logo](https://drive.google.com/file/d/1o5t9TS2Z-hNxc7_7wqjHKqnmbewf5RQx/view?usp=sharing)
+![Passcrack Logo](https://ibb.co.com/GMmmB1s)
 
 Passcrack adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
 
