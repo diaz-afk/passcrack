@@ -1,6 +1,3 @@
-Berikut adalah dokumentasi Passcrack yang ditulis dalam format **Markdown (.md)**:
-
-```markdown
 # Passcrack
 
 **Passcrack** adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
@@ -123,10 +120,3 @@ Alat ini dilindungi oleh **MIT License**.
 
 Silakan baca manual [Passcrack Manual](Manual_Book_Passcrack.pdf) untuk detail lebih lanjut.
 ```
-
-### Cara Menggunakan
-1. Simpan file ini sebagai `README.md`.
-2. Unggah ke root repository proyek Anda di GitHub.
-3. Markdown ini akan secara otomatis ditampilkan sebagai dokumentasi di halaman utama repository Anda.
-
-Jika Anda ingin menambahkan gambar atau bagian lain, beri tahu saya, dan saya akan membantu Anda menyesuaikannya! 😊
