@@ -6,7 +6,7 @@
 
 Passcrack is a tool designed to perform brute force attacks, dictionary attacks, and hash cracking using rainbow tables. It helps identify weak passwords and improve system security.
 
-This project is maintained by [Diaz Sabat Dolly Silitonga](https://github.com/diaz-afk), [Naufal Kanz](https://twitter.com/Jhaddix), [Naya Amanda](https://blog.g0tmi1k.com/), [Muhammad Hadi Khairullah](https://github.com/ItsIgnacioPortal), [Ahmad Rizqi Hafil Ardhi](https://github.com/BananaMoustache), [Mutiara Putri](https://blog.g0tmi1k.com/).
+This project is maintained by [Diaz Sabat Dolly Silitonga](https://github.com/diaz-afk), [Naufal Kanz](https://github.com/Arkanz31), [Naya Amanda](https://github.com/amndaq), [Muhammad Hadi Khairullah](https://github.com/Ashborn113), [Ahmad Rizqi Hafil Ardhi](https://github.com/BananaMoustache), [Mutiara Putri](https://github.com/ducklingz).
 
 ---
 
@@ -107,7 +107,7 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 | `-password`        | Fixed password for brute force or file containing a list of passwords for dictionary attack. | `-password 1234` or `-password passwords.txt`      |
 | `-c`               | Charset for brute force attack.                                                             | `-c 5` (numeric)                                   |
 | `-length`          | Specifies the length of username and/or password for brute force attack.                    | `-length 4`                                        |
-| `--sc`             | Filters responses based on the expected HTTP status code(s).                                | `--sc 200,404`                                     |
+| `--sc`             | Filters responses based on the expected HTTP status code.                                   | `--sc 200`                                         |
 | `rtgen`            | Command to generate a rainbow table.                                                        | `rtgen md5 loweralpha 4 6 1000`                    |
 | `rtsort`           | Command to sort rainbow tables.                                                             | `rtsort .`                                         |
 | `rcrack`           | Command to crack hashes using rainbow tables.                                               | `rcrack --hash abc1234567890`                      |
