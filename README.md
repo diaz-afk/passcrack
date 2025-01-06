@@ -2,79 +2,81 @@
 
 ![Passcrack Logo](passcrack.jpg)
 
-Passcrack adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
+### About Passcrack
 
-[![Build With](https://www.python.org/)
+Passcrack is a tool designed to perform brute force attacks, dictionary attacks, and hash cracking using rainbow tables. It helps identify weak passwords and improve system security.
+
+This project is maintained by [Diaz Sabat](http://diaz-afk.site/), [Naufal Kanz](https://twitter.com/Jhaddix), [Muhammad Hadi Khairullah](https://github.com/ItsIgnacioPortal), [Naya Amanda](https://blog.g0tmi1k.com/), [Mutiara Putri](https://blog.g0tmi1k.com/), [Ahmad Rizqi Hafil Ardhi](https://blog.g0tmi1k.com/).
 
 ---
 
 ## Fitur Utama
 
-- **Brute Force**: Mencoba berbagai kombinasi username dan password berdasarkan panjang dan karakter tertentu.
-- **Dictionary Attack**: Menggunakan daftar username dan password yang telah ditentukan untuk mencocokkan kredensial.
+- **Brute Force**: Attempts various username and password combinations based on specific lengths and characters.
+- **Dictionary Attack**: Uses a predefined list of usernames and passwords to match credentials.
 - **Rainbow Table**:
-  - Membuat rainbow table baru.
-  - Mengurutkan rainbow table untuk efisiensi.
-  - Memecahkan hash menggunakan rainbow table.
+  - Creates a new rainbow table.
+  - Sorts the rainbow table for efficiency.
+  -  Cracking hashes using rainbow tables.
 
 ---
 
 ## Disclaimer
 
-Alat ini dirancang untuk pengujian keamanan dengan izin resmi. Penggunaan untuk aktivitas ilegal atau tanpa izin sepenuhnya menjadi tanggung jawab pengguna.
+This tool is designed for security testing with authorised permissions. Use for illegal or unauthorised activities is the sole responsibility of the user.
 
 ---
 
-## Instalasi
+## Installation
 
-Passcrack memerlukan [Python 3.x](https://www.python.org/downloads/) untuk berjalan.
+Passcrack requires [Python 3.x](https://www.python.org/downloads/) to run.
 
-### Kloning Repository:
+### Repository Cloning:
 ```sh
 git clone https://github.com/username/passcrack.git
 cd passcrack
 ```
 
-### Instalasi Dependencies:
+### Installing Dependencies:
 ```sh
 pip install -r requirements.txt
 ```
 
-### Menjalankan Alat:
+### Running the Tool:
 ```sh
 python3 passcrack.py
 ```
 
 ---
 
-## Panduan Penggunaan
+## Usage Guidelines
 
 ### Brute Force Attack
 
-#### Contoh: Brute Force untuk Password Saja
+#### Example: Brute Force for Password Only
 ```sh
 python3 passcrack.py -b --url http://target/login -username admin -password -c 5 -length 4
 ```
 
-- **-b**: Mode brute force.
-- **--url**: URL target.
-- **-username**: Username tetap.
-- **-password**: Password dicari dengan brute force.
-- **-c**: Charset (angka).
-- **-length**: Panjang password (4 karakter).
+- **-b**: Brute force mode.
+- **--url**: Target URL.
+- **-username**: Fixed username.
+- **-password**: Password searched with brute force.
+- **-c**: Charset (number).
+- **-length**: Password length (4 characters).
 
 ---
 
 ### Dictionary Attack
 
-#### Contoh: Dictionary Attack untuk Kombinasi File Username dan Password
+#### Example: Dictionary Attack for Username and Password File Combination
 ```sh
 python3 passcrack.py -d --url http://target/login -username usernames.txt -password passwords.txt
 ```
 
 - **-d**: Mode dictionary attack.
-- **-username**: File daftar username.
-- **-password**: File daftar password.
+- **-username**: Username list file.
+- **-password**: Password list file.
 
 ---
 
@@ -85,33 +87,55 @@ python3 passcrack.py -d --url http://target/login -username usernames.txt -passw
 python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 ```
 
-- **rtgen**: Membuat rainbow table.
-- **md5**: Algoritma hash.
-- **loweralpha**: Karakter (a-z).
-- **4**: Panjang minimum.
-- **6**: Panjang maksimum.
-- **1000**: Jumlah chain.
+- **rtgen**: Create rainbow table.
+- **md5**: Hash algorithm.
+- **loweralpha**: Characters (a-z).
+- **4**: Minimum length.
+- **6**: Maximum length.
+- **1000**: Number of chains.
 
 ---
 
 ## Troubleshooting
 
-### Masalah Umum
+### Common Problems
 
 1. **Invalid charset option**
-   - **Solusi**: Periksa kembali nilai charset yang digunakan.
+   - **Solusi**: Double check the charset value being used.
 
 2. **Kesalahan parameter**
-   - **Solusi**: Sesuaikan parameter dengan panduan di atas.
+   - **Solusi**: Adjust the parameters according to the guidelines above.
 
 3. **File tidak ditemukan**
-   - **Solusi**: Pastikan file username/password ada di lokasi yang benar.
+   - **Solusi**: Make sure the username/password file is in the correct location.
 
 ---
 
-## Kontribusi
+## Parameters
 
-Ingin berkontribusi? Hebat!
+| Parameter          | Description                                                                                 | Example                                             |
+|--------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| `-b`               | Activates brute force mode.                                                                 | `-b`                                               |
+| `-d`               | Activates dictionary attack mode.                                                           | `-d`                                               |
+| `--url`            | Specifies the target URL for the attack.                                                    | `--url http://target/login`                        |
+| `-username`        | Fixed username for brute force or file containing a list of usernames for dictionary attack. | `-username admin` or `-username usernames.txt`     |
+| `-password`        | Fixed password for brute force or file containing a list of passwords for dictionary attack. | `-password 1234` or `-password passwords.txt`      |
+| `-c`               | Charset for brute force attack.                                                             | `-c 5` (numeric)                                   |
+| `-length`          | Specifies the length of username and/or password for brute force attack.                    | `-length 4`                                        |
+| `--sc`             | Filters responses based on the expected HTTP status code(s).                                | `--sc 200,404`                                     |
+| `rtgen`            | Command to generate a rainbow table.                                                        | `rtgen md5 loweralpha 4 6 1000`                    |
+| `rtsort`           | Command to sort rainbow tables.                                                             | `rtsort .`                                         |
+| `rcrack`           | Command to crack hashes using rainbow tables.                                               | `rcrack --hash abc1234567890`                      |
 
-Kami menerima pull request untuk meningkatkan alat ini. Silakan buka issue di halaman repository kami untuk diskusi lebih lanjut.
+### Charset Options for Brute Force (`-c`)
+- `1`: Alpha (A-Z)
+- `2`: Alpha-Numeric (a-z, 0-9)
+- `3`: alpha-numeric-symbol14 (a-z, 0-9, symbol14)
+- `4`: All Characters
+- `5`: Numeric (0-9)
+- `6`: Lowercase alpha (a-z)
+- `7`: Lowercase alpha-numeric (a-z, 0-9)
 
+---
+
+**Note**: Use parameters correctly to avoid input errors. Refer to the examples above for proper usage.
