@@ -1,6 +1,10 @@
 # Passcrack
 
-**Passcrack** adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
+![Passcrack Logo](https://via.placeholder.com/1200x400.png?text=Passcrack)
+
+Passcrack adalah alat yang dirancang untuk melakukan serangan brute force, dictionary attack, dan cracking hash menggunakan rainbow table. Alat ini membantu mengidentifikasi kata sandi yang lemah dan meningkatkan keamanan sistem.
+
+[![Build Status](https://travis-ci.org/username/passcrack.svg?branch=master)](https://travis-ci.org/username/passcrack)
 
 ---
 
@@ -23,20 +27,21 @@ Alat ini dirancang untuk pengujian keamanan dengan izin resmi. Penggunaan untuk 
 
 ## Instalasi
 
+Passcrack memerlukan [Python 3.x](https://www.python.org/downloads/) untuk berjalan.
+
 ### Kloning Repository:
-```bash
+```sh
 git clone https://github.com/username/passcrack.git
 cd passcrack
 ```
 
-### Persyaratan:
-Pastikan Python 3.x dan pustaka yang dibutuhkan terinstal:
-```bash
+### Instalasi Dependencies:
+```sh
 pip install -r requirements.txt
 ```
 
-### Jalankan Alat:
-```bash
+### Menjalankan Alat:
+```sh
 python3 passcrack.py
 ```
 
@@ -47,7 +52,7 @@ python3 passcrack.py
 ### Brute Force Attack
 
 #### Contoh: Brute Force untuk Password Saja
-```bash
+```sh
 python3 passcrack.py -b --url http://target/login -username admin -password -c 5 -length 4
 ```
 
@@ -63,7 +68,7 @@ python3 passcrack.py -b --url http://target/login -username admin -password -c 5
 ### Dictionary Attack
 
 #### Contoh: Dictionary Attack untuk Kombinasi File Username dan Password
-```bash
+```sh
 python3 passcrack.py -d --url http://target/login -username usernames.txt -password passwords.txt
 ```
 
@@ -76,7 +81,7 @@ python3 passcrack.py -d --url http://target/login -username usernames.txt -passw
 ### Rainbow Table
 
 #### Contoh: Membuat Rainbow Table
-```bash
+```sh
 python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 ```
 
@@ -106,16 +111,26 @@ python3 passcrack.py rtgen md5 loweralpha 4 6 1000
 
 ## Kontribusi
 
-Kami menerima kontribusi untuk meningkatkan alat ini. Silakan kirim pull request atau buka issue di halaman repository.
+Ingin berkontribusi? Hebat!
+
+Kami menerima pull request untuk meningkatkan alat ini. Silakan buka issue di halaman repository kami untuk diskusi lebih lanjut.
 
 ---
 
 ## Lisensi
 
-Alat ini dilindungi oleh **MIT License**.
+MIT License
+
+**Free Software, Hell Yeah!**
 
 ---
 
 ## Dokumentasi Tambahan
 
-Silakan baca manual [Passcrack Manual](Manual_Book_Passcrack.pdf) untuk detail lebih lanjut.
+Baca manual lengkap di [Passcrack Manual](Manual_Book_Passcrack.pdf) untuk informasi lebih lanjut.
+
+---
+
+## Build Status
+
+[![Build Status](https://travis-ci.org/username/passcrack.svg?branch=master)](https://travis-ci.org/username/passcrack)
